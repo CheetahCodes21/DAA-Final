@@ -20,8 +20,7 @@ def Kruskals(n, cost):
         if parent[i] != parent[j]:
             mincost += weight
             print("Edge:", j + 1, "-->", i + 1, "Cost:", weight)
-            parent = [parent[j] if p == parent[i] else p for p in parent]
-    
+            parent = [parent[j] if p == parent[i] else p for p in parent]   
     print("Minimum cost =", mincost)
 
 n = int(input("Enter the number of nodes: "))
